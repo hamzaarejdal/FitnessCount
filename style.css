@@ -230,28 +230,88 @@ section {
     scroll-margin-top: 76px;
 }
 
+/* ================= HOME (NEW) ================= */
+
 #home {
-    padding: 100px 8%;
-    background-color: #17232d;
+    position: relative;
+    padding: 120px 8% 110px;
+    background:
+        radial-gradient(circle at 50% 0%, rgba(57, 229, 140, 0.18), transparent 60%),
+        #17232d;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.hero-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(57, 229, 140, 0.1);
+    border: 1px solid rgba(57, 229, 140, 0.3);
+    color: #39e58c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 24px;
 }
 
 #home h2 {
-    font-size: 40px;
+    font-size: 56px;
+    line-height: 1.1;
+    margin: 0 0 20px;
+    letter-spacing: -1.5px;
+}
+
+#home h2 span {
+    color: #39e58c;
 }
 
 #home p {
     color: #b0bec5;
-    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto 36px;
+    max-width: 520px;
+}
+
+.hero-actions {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 25px;
-    background-color: #28e59a;
+    padding: 14px 30px;
+    background-color: #39e58c;
     color: #101820;
+    font-weight: 700;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 2px solid #39e58c;
+    transition: all 0.3s ease;
 }
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(57, 229, 140, 0.35);
+}
+
+.btn-outline {
+    background: transparent;
+    color: #39e58c;
+}
+
+.btn-outline:hover {
+    background: rgba(57, 229, 140, 0.1);
+    box-shadow: none;
+}
+
+/* ================= WORKOUTS (ORIGINAL) ================= */
 
 .workouts {
     display: flex;
@@ -275,6 +335,8 @@ section {
     color: #b0bec5;
 }
 
+/* ================= ABOUT / FOOTER ================= */
+
 #about {
     background-color: #17232d;
 }
@@ -287,7 +349,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+    #home {
+        padding: 80px 6% 70px;
+    }
+
     #home h2 {
-        font-size: 30px;
+        font-size: 36px;
     }
 }
