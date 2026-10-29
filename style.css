@@ -516,11 +516,76 @@ section {
 
 /* ================= FOOTER ================= */
 
-footer {
-    padding: 15px;
-    text-align: center;
+.footer {
     background-color: #080d12;
+    border-top: 1px solid rgba(57, 229, 140, 0.15);
     color: #b0bec5;
+    text-align: left;
+}
+
+.footer-inner {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.footer-brand p {
+    margin: 18px 0 0;
+    max-width: 300px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-col h4 {
+    margin: 0 0 18px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-col a {
+    display: block;
+    color: #b0bec5;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.footer-col a:hover {
+    color: #39e58c;
+    transform: translateX(5px);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 20px 24px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 760px) {
+    .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .footer-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col a:hover {
+        transform: none;
+    }
 }
 
 @media (max-width: 600px) {
