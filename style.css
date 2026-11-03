@@ -514,6 +514,83 @@ section {
     }
 }
 
+/* ================= CONTACT ================= */
+
+#contact {
+    padding: 90px 8%;
+}
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 999px;
+    background: rgba(57, 229, 140, 0.1);
+    border: 1px solid rgba(57, 229, 140, 0.3);
+    color: #39e58c;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin: 0 0 16px;
+    letter-spacing: -1px;
+}
+
+#contact h2 span {
+    color: #39e58c;
+}
+
+.contact-text {
+    color: #b0bec5;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 auto 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #1c2a35;
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 15px;
+    font-family: inherit;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #7d8b96;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #39e58c;
+    box-shadow: 0 0 0 3px rgba(57, 229, 140, 0.15);
+}
+
+.contact-form .btn {
+    cursor: pointer;
+    font-size: 15px;
+    font-family: inherit;
+}
+
 /* ================= FOOTER ================= */
 
 .footer {
