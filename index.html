@@ -175,6 +175,17 @@
     </div>
 </footer>
 
+<script>
+    const header = document.querySelector(".header");
+
+    function onScroll() {
+        header.classList.toggle("scrolled", window.scrollY > 40);
+    }
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+</script>
+
 </body>
 
 </html>
