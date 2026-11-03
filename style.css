@@ -327,6 +327,25 @@ section {
     box-shadow: none;
 }
 
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 44px 0 0;
+    padding: 0;
+}
+
+.hero-highlights li {
+    color: var(--muted);
+    font-family: var(--font-head);
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
 /* ================= WORKOUTS ================= */
 
 #workouts {
