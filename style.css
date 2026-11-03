@@ -74,35 +74,42 @@ h4 {
 /* Logo */
 .logo {
     display: inline-flex;
-    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     color: var(--text);
+    text-decoration: none;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    padding: 9px;
+    box-sizing: border-box;
+    color: #ffffff;
+    background: var(--accent-gradient);
+    border-radius: 6px;
+    transform: skewX(-8deg);
+    box-shadow: 0 6px 18px rgba(255, 77, 28, 0.35);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.logo:hover .logo-icon {
+    transform: skewX(-8deg) rotate(-14deg) scale(1.06);
+    box-shadow: 0 8px 24px rgba(255, 77, 28, 0.55);
+}
+
+.logo-text {
     font-family: var(--font-head);
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 800;
     font-style: italic;
     text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     line-height: 1;
 }
 
-.logo span {
+.logo-text span {
     color: var(--accent);
-}
-
-.logo-line {
-    display: block;
-    width: 28px;
-    height: 4px;
-    background: var(--accent-gradient);
-    margin-top: 5px;
-    border-radius: 2px;
-    transform: skewX(-20deg);
-    transition: width 0.35s ease;
-}
-
-.logo:hover .logo-line {
-    width: 100%;
 }
 
 /* Links */
